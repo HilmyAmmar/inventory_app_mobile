@@ -14,5 +14,5 @@ Stateful Widget   : Widget yang dinamis yang berarti widget dapat merespons peru
 5. InkWell: Memberikan area responsif terhadap sentuhan user
 6. Icon: Menampilkan icon
 7. Container: Mengelompokkan ikon dan teks ke dalam card
-### Cara implementasi checklist di atas secara step-by-step
+### Implementasi Checklist Tugas
 
