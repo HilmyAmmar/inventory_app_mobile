@@ -1,16 +1,18 @@
-# inventory_app
+# Inventory App Using Flutter 
+Nama   : Hilmy Ammar Darmawan  
+NPM    : 2206081736  
+Kelas  : PBP - E  
+## Assignment 7
+### Perbedaan utama antara stateless dan stateful widget dalam konteks pengembangan aplikasi flutter?
+Stateless Widget  : Widget yang statis yang berarti tidak dapat berubah setelah dibuat  
+Stateful Widget   : Widget yang dinamis yang berarti widget dapat merespons perubahan data dan interaksi user
+### Widget yang digunakan dalam tugas 7
+1. ShopCard: Menerima data dari ShopItem dan menampilkannya dalam bentuk card
+2. Scaffodld: Berperan sebagai kerangka dasar untuk tampilan aplikasi
+3. AppBar: Menampilkan judul aplikasi
+4. Text: Menampilkan teks di layar
+5. InkWell: Memberikan area responsif terhadap sentuhan user
+6. Icon: Menampilkan icon
+7. Container: Mengelompokkan ikon dan teks ke dalam card
+### Cara implementasi checklist di atas secara step-by-step
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
