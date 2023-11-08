@@ -27,7 +27,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Shopping List',
+          'Inventory App',
         ),
       ),
       body: SingleChildScrollView(
