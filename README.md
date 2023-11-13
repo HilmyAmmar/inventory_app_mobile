@@ -170,3 +170,9 @@ class ShopCard extends StatelessWidget {
 ```
 #### Finishing
 Setelah semua kode saya edit sesuai dengan panduan pada tutorial dan checklist pada tugas, saya menjalankan 'flutter run' dan hasilnya memang seperti yang saya harapkan. Terdapat 3 card, yaitu Lihat Item, Tambah Item, dan Logout dengan setiap cardnya memiliki warna yang berbeda. Terakhir, saya melakukan git add, commit, dan push ke dalam repository ini
+
+## Assigment 8
+
+### Perbedaan antara Navigator.push() dan Navigator.pushReplacement(), beserta contoh
+1. 'Navigator.push()' digunakan untuk menambahkan halaman baru ke *navigation stack*. Halaman baru ditambahkan di atas halaman sebelumnya sehingga pengguna dapat kembali ke halaman tersebut dengan mudah. Contoh penggunaannya adalah ketika meng-click suatu card yang menampilkan suatu produk maka akan berpindah ke halaman yang mengandung informasi produk tersebut dan akan kembali ke halaman card saat pengguna meng-click tombol back.
+2. 'Navigator.pushReplacement()' digunakan untuk menambahkan halaman baru ke *navigation stack* disertai dengan menggantikan halaman saat ini dalam tumpukan dengan halaman baru. Contoh penggunaannya adalah ketika meng-click tombol log in pada halaman login, maka akan berpindah ke beranda utama dan tidak bisa kembali ke halaman login lagi.
