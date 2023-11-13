@@ -185,7 +185,9 @@ Setelah semua kode saya edit sesuai dengan panduan pada tutorial dan checklist p
 5. Stack: Digunakan untuk menumpukkan elemen-elemen di atas satu sama lain
 
 ### Elemen input pada Tugas 7 beserta alasan penggunaannya
-
+1. TextFormField: Digunakan pada setiap kolom input pada form, termasuk kolom nama, harga, dan deskripsi. Elemen ini dapat juga digunakan untuk menentukan berbagai properti pada form, seperti label, teks, dsb. Selain itu, elemen ini juga menyediakan validasi input untuk memastikan bahwa pengguna memasukkan data yang valid dan sesuai apa yang diharapkan.
+2. ElevatedButton: Digunakan untuk mengirimkan data. Ketika user menekan tombol, Flutter akan mengirimkan data yang telah dimasukkan melalui TextFormField ke fungsi onPressed(). Fungsi ini kemudian digunakan untuk melakukan pemrosesan data dan mengambil tindakan sesuai yang diinginkan, seperti menyimpan data atau melakukan perubahan pada data yang telah ada.
+   
 ### Penerapan *clean architecture* pada Flutter
 *Clean Architecture* merupakan sebuah pola arsitektur dalam pengembangan software yang memisahkan domain dari infrastruktur. Hal ini membuat aplikasi menjadi lebih mudah untuk dipahami, diuji, dan diperbarui. Penerapa *clean architecture* pada flutter dapat dibagi menjadi beberapa layer, yaitu:
 1. Presentation layer: Bertanggung jawab dalam menampilkan data kepada pengguna. Layer ini menggunakan widget Flutter untuk membangun *user interface* aplikasinya
