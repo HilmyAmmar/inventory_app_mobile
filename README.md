@@ -176,3 +176,11 @@ Setelah semua kode saya edit sesuai dengan panduan pada tutorial dan checklist p
 ### Perbedaan antara Navigator.push() dan Navigator.pushReplacement(), beserta contoh
 1. 'Navigator.push()' digunakan untuk menambahkan halaman baru ke *navigation stack*. Halaman baru ditambahkan di atas halaman sebelumnya sehingga pengguna dapat kembali ke halaman tersebut dengan mudah. Contoh penggunaannya adalah ketika meng-click suatu card yang menampilkan suatu produk maka akan berpindah ke halaman yang mengandung informasi produk tersebut dan akan kembali ke halaman card saat pengguna meng-click tombol back.
 2. 'Navigator.pushReplacement()' digunakan untuk menambahkan halaman baru ke *navigation stack* disertai dengan menggantikan halaman saat ini dalam tumpukan dengan halaman baru. Contoh penggunaannya adalah ketika meng-click tombol log in pada halaman login, maka akan berpindah ke beranda utama dan tidak bisa kembali ke halaman login lagi.
+
+### Widget pada Flutter
+1. Container: Digunakan untuk mengatur properti seperti padding, margin, dan decoration
+2. Row: Digunakan untuk menyusun elemen secara horizontal
+3. Column: Digunakan untuk menyusun elemen secara vertikal
+4. ListView: Digunakan untuk menampilkan daftar elemen
+5. Stack: Digunakan untuk menumpukkan elemen-elemen di atas satu sama lain
+
