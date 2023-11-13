@@ -184,3 +184,10 @@ Setelah semua kode saya edit sesuai dengan panduan pada tutorial dan checklist p
 4. ListView: Digunakan untuk menampilkan daftar elemen
 5. Stack: Digunakan untuk menumpukkan elemen-elemen di atas satu sama lain
 
+### Elemen input pada Tugas 7 beserta alasan penggunaannya
+
+### Penerapan *clean architecture* pada Flutter
+*Clean Architecture* merupakan sebuah pola arsitektur dalam pengembangan software yang memisahkan domain dari infrastruktur. Hal ini membuat aplikasi menjadi lebih mudah untuk dipahami, diuji, dan diperbarui. Penerapa *clean architecture* pada flutter dapat dibagi menjadi beberapa layer, yaitu:
+1. Presentation layer: Bertanggung jawab dalam menampilkan data kepada pengguna. Layer ini menggunakan widget Flutter untuk membangun *user interface* aplikasinya
+2. Domain layer: Bertanggung jawab dalam memproses logika bisnis aplikasi. 
+3. Data layer: Bertanggung jawab dalam mengambil dan menyimpan data. Layer ini dapat menggunakan berbagai sumber data, seperti API, database, atau file lokal.
