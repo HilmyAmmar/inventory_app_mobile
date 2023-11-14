@@ -193,3 +193,86 @@ Setelah semua kode saya edit sesuai dengan panduan pada tutorial dan checklist p
 1. Presentation layer: Bertanggung jawab dalam menampilkan data kepada pengguna. Layer ini menggunakan widget Flutter untuk membangun *user interface* aplikasinya
 2. Domain layer: Bertanggung jawab dalam memproses logika bisnis aplikasi. 
 3. Data layer: Bertanggung jawab dalam mengambil dan menyimpan data. Layer ini dapat menggunakan berbagai sumber data, seperti API, database, atau file lokal.
+
+### Implementasi Checklist Tugas
+#### Menambahkan drawer menu untuk navigasi
+Pertama, saya membuat berkas baru dalam direktori baru `widgets` dengan nama `left_drawer.dart`. Pada berkas tersebut, saya menambahkan kode berikut:
+```
+import 'package:flutter/material.dart';
+
+class LeftDrawer extends StatelessWidget {
+  const LeftDrawer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        children: [
+          const DrawerHeader(
+            // TODO: Bagian drawer header
+          ),
+          // TODO: Bagian routing
+        ],
+      ),
+    );
+  }
+}
+```
+Selanjutnya, saya mengimpor halaman-halaman yang ingin kita masukkan ke dalam navigasi pada drawer menu. Setelah berhasil import, saya memasukkan routing untuk halaman-halaman yang telah diimpor ke bagian `TODO: Bagian routing` dengan kode berikut:
+```
+...
+ListTile(
+  leading: const Icon(Icons.home_outlined),
+  title: const Text('Halaman Utama'),
+  // Bagian redirection ke MyHomePage
+  onTap: () {
+    Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => MyHomePage(),
+        ));
+  },
+),
+ListTile(
+  leading: const Icon(Icons.add_shopping_cart),
+  title: const Text('Tambah Produk'),
+  // Bagian redirection ke ShopFormPage
+  onTap: () {
+    /*
+    TODO: Buatlah routing ke ShopFormPage di sini,
+    setelah halaman ShopFormPage sudah dibuat.
+    */
+  },
+),
+...
+```
+Lanjut, saya akan menghias header dengan memasukkan drawer header di `TODO: Bagian drawer header` dengan kode berikut:
+```
+...
+const DrawerHeader(
+  decoration: BoxDecoration(
+    color: Colors.indigo,
+  ),
+  child: Column(
+    children: [
+      Text(
+        'Shopping List',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+        ),
+      ),
+      Padding(padding: EdgeInsets.all(10)),
+      Text("Catat seluruh keperluan belanjamu di sini!",
+          // TODO: Tambahkan gaya teks dengan center alignment, font ukuran 15, warna putih, dan weight biasa
+          ),
+    ],
+  ),
+),
+...
+```
+Terakhir, setelah berhasil membuat drawer menu. Saya memasukkan drawer menu yang telah dibuat tersebut ke dalam halaman `menu.dart` dengan kode `drawer: const LeftDrawer()` setelah melakukan impor
+
+#### Menambahkan Form dan Elemen Input 
