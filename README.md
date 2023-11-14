@@ -533,3 +533,6 @@ Menambahkan kode berikut agar kode yang terletak pada atribut `onTap` dari `InkW
   },
 ...
 ```
+
+#### Finishing
+Setelah semua kode telah ditambahkan, saya memindahkan dan merapikan beberapa file. VS Code akan melakukan refactoring secara otomatis. Terakhir, saya melakukan git add commit dan push ke dalam repository ini setelah menyelesaikan semua TODO yang ada agar program berjalan dengan lancar tanpa adanya bug
