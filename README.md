@@ -466,3 +466,70 @@ class _ShopFormPageState extends State<ShopFormPage> {
 ```
 
 #### Memunculkan Data
+Saya menambahkan fungsi `showDialog()` pada bagian `onPressed()` dan memunculkan widget `AlertDialog` pada fungsi tersebut serta juga menambahkan fungsi untuk reset form
+```
+...
+child: ElevatedButton(
+          style: ButtonStyle(
+            backgroundColor:
+                MaterialStateProperty.all(Colors.indigo),
+          ),
+          onPressed: () {
+            if (_formKey.currentState!.validate()) {
+              showDialog(
+                context: context,
+                builder: (context) {
+                  return AlertDialog(
+                    title: const Text('Produk berhasil tersimpan'),
+                    content: SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                        children: [
+                          Text('Nama: $_name'),
+                          // TODO: Munculkan value-value lainnya
+                        ],
+                      ),
+                    ),
+                    actions: [
+                      TextButton(
+                        child: const Text('OK'),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ],
+                  );
+                },
+              );
+            _formKey.currentState!.reset();
+            }
+          },
+          child: const Text(
+            "Save",
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
+...
+```
+
+#### Menambahkan Fitur Navigasi pada Tombol
+Menambahkan kode berikut agar kode yang terletak pada atribut `onTap` dari `InkWell` dapat melakukan navigasi ke route lain. Kode ditambahkan di bawa kode `ScaffoldMessenger` yang menampilkan snackbar.
+```
+...
+  // Area responsif terhadap sentuhan
+  onTap: () {
+    // Memunculkan SnackBar ketika diklik
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(
+          content: Text("Kamu telah menekan tombol ${item.name}!")));
+
+    // Navigate ke route yang sesuai (tergantung jenis tombol)
+    if (item.name == "Tambah Produk") {
+      // TODO: Gunakan Navigator.push untuk melakukan navigasi ke MaterialPageRoute yang mencakup ShopFormPage.
+    }
+
+  },
+...
+```
