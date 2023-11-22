@@ -536,3 +536,25 @@ Menambahkan kode berikut agar kode yang terletak pada atribut `onTap` dari `InkW
 
 #### Finishing
 Setelah semua kode telah ditambahkan, saya memindahkan dan merapikan beberapa file. VS Code akan melakukan refactoring secara otomatis. Terakhir, saya melakukan git add commit dan push ke dalam repository ini setelah menyelesaikan semua TODO yang ada agar program berjalan dengan lancar tanpa adanya bug
+
+## Assignment 9
+### Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Iyaa, kita bisa melakukan pengambilan data JSON tanpa membuat model terlebih dahulu jika kita hanya mengambil data JSON tanpa harus melakukan pemrosesan atau analisis data lebih lanjut. Pembuatan model diperlukan jika kita perlu untuk melakukan pemrosesan atau analisis data kompleks pada JSON.
+
+### Fungsi dari CookieRequest dan kenapa instance CookieRequest perlu untuk dibagikan ke semua komponen di aplikasi Flutter
+CookieRequest berfungsi untuk mengelola cookie di aplikasi Flutter. Cookie digunakan untuk menyimpan informasi, seperti status login, preferensi user, daftar produk yang sudah dibeli, etc. Instance CookieRequest perlu untuk dibagikan ke semua komponen di aplikasi Flutter agar semua komponen dapat mengakses dan mengelola cookie. 
+
+### Mekanisme pengambalin data JSON hingga ditampilkan pada Flutter
+Melakukan permintaan HTTP -> Menerima respons HTTP -> Deserialisasi data JSON -> Menyimpan data -> Menampilkan data
+
+### Mekanimse autentikasi input data akun pada Flutter ke Django hingga selesainya proses autentikasi oleh Django dan tampilnya menu pada Flutter
+Penginputan data akun pada Flutter -> permintaan HTTP ke API Django -> Proses autentikasi oleh Django -> Pembuatan respons HTTP oleh Django -> Penerimaan respon HTTP oleh Flutter -> Pemeriksaan token autentikasi oleh Flutter
+
+### Widget yang dipakai pada tugas ini
+1. Scaffold: Struktur dasar tampilan aplikasi Flutter
+2. Elevated Button: Membuat tombol yang dapat berfungsi ketika ditekan/klik
+3. TextField: Menerima input teks dari pengguna
+4. AppBar: Menampilkan baris judul atau pilihan di bagian atas interface
+5. ListView.Builder: Membuat daftar secara dinamis berdasarkan jumlah item tertentu
+6. ListTile: Menampilkan sebuah item dalam daftar 
+7. Navigator: Memungkinkan perpindahan antara berbagai tampilan atau layar dalam aplikasi
